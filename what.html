@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>1A1Z Capital – What We Do</title>
+  <style>
+    /* Basic Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Body Styles */
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      position: relative; /* For waterdrops background overlay */
+      overflow-x: hidden;
+    }
+
+    /* Subtle "Water Drops" Background */
+    body::before {
+      content: "";
+      position: fixed; /* Stays put even if we scroll */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; /* Behind the page content */
+      background:
+        radial-gradient(circle at 20% 20%, rgba(173,216,230, 0.15), transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(173,216,230, 0.15), transparent 40%);
+      background-repeat: no-repeat;
+      background-color: #FBFBFB; /* Base page color */
+    }
+
+    /* Navigation Bar */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background-color: #fff; /* Matches page background */
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 1rem;
+    }
+    .nav-brand {
+      font-size: 1.25rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    .nav-links a:hover {
+      color: #666;
+    }
+
+    /* Main Content Container (side-by-side layout) */
+    .content {
+      flex: 1;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      display: flex;
+      align-items: center;       /* Vertically center in the container */
+      justify-content: center;   /* Horizontally center in the container */
+      flex-wrap: wrap;           /* Wrap for smaller screens */
+      gap: 2rem;
+      text-align: center;
+    }
+
+    .text-section {
+      flex: 1 1 300px; /* Allows it to shrink/grow but not below 300px */
+    }
+    .text-section h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .text-section p {
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+      text-align: left; 
+      /* Tip: remove text-align: left if you'd like fully centered paragraphs */
+    }
+
+    .svg-section {
+      flex: 0 1 300px; /* Doesn’t grow beyond initial width, min 300px */
+      display: flex;
+      justify-content: center;
+    }
+    .svg-section svg {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">1A1Z Capital</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="what.html">What We Do</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- What We Do Content -->
+  <div class="content">
+
+    <!-- Left Text (Centered as a block) -->
+    <div class="text-section">
+      <h1>What We Do</h1>
+      <p>
+        At 1A1Z, we go beyond traditional investment by partnering in growth. We empower
+        visionary entrepreneurs to navigate the Web3 ecosystem through our comprehensive
+        services, including strategic consulting, fundraising, liquidity provision,
+        global marketing, exchange listings, and more—ensuring each project can thrive
+        in an ever-evolving digital landscape. With vibrant teams strategically positioned in the United States, Singapore,
+        Bangkok, Seoul, and Dubai, our mission is to shape the decentralized future
+        by fueling trailblazing founders who dare to redefine the digital frontier.
+      </p>
+    </div>
+
+    <!-- Right SVG (Centered as a block) -->
+    <div class="svg-section">
+      <svg version="1.1"
+           xmlns="http://www.w3.org/2000/svg"
+           xmlns:xlink="http://www.w3.org/1999/xlink"
+           viewBox="0 0 100 100"
+           enable-background="new 0 0 100 100"
+           xml:space="preserve"
+           fill="#e0e0e0">
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+        <g id="SVGRepo_iconCarrier">
+          <g id="Spinner_x5F_50_x25_">
+            <g>
+              <path fill="none"
+                    stroke="#e0e0e0"
+                    stroke-width="4"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                    d="M50.188,26.812
+                       c12.806,0,23.188,10.381,23.188,23.188S62.994,73.188,50.188,73.188c0,0-1.947-0.008-3.035-0.176" />
+              <g>
+                <ellipse transform="matrix(0.9968 -0.0794 0.0794 0.9968 -4.0326 2.3121)" cx="27.045" cy="51.843" rx="1.959" ry="1.959" />
+                <ellipse transform="matrix(0.9968 -0.0794 0.0794 0.9968 -4.628 2.4912)" cx="28.998" cy="59.416" rx="1.959" ry="1.959" />
+                <ellipse transform="matrix(0.9968 -0.0794 0.0794 0.9968 -5.1348 2.8556)" cx="33.325" cy="65.967" rx="1.959" ry="1.959" />
+                <ellipse transform="matrix(0.9968 -0.0794 0.0794 0.9968 -5.4877 3.3713)" cx="39.63" cy="70.661" rx="1.959" ry="1.959" />
+                <ellipse transform="matrix(0.9968 -0.0794 0.0794 0.9968 -5.6506 3.9762)" cx="47.152" cy="73.012" rx="1.959" ry="1.959" />
+              </g>
+              <g>
+                <ellipse transform="matrix(0.9962 -0.0867 0.0867 0.9962 -3.713 2.567)" cx="27.71" cy="44.049" rx="1.959" ry="1.959" />
+                <ellipse transform="matrix(0.9962 -0.0867 0.0867 0.9962 -3.079 2.8158)" cx="30.892" cy="36.872" rx="1.959" ry="1.959" />
+                <ellipse transform="matrix(0.9962 -0.0867 0.0867 0.9962 -2.567 3.266)" cx="36.334" cy="31.199" rx="1.959" ry="1.959" />
+                <ellipse transform="matrix(0.9962 -0.0867 0.0867 0.9962 -2.2318 3.8617)" cx="43.363" cy="27.636" rx="1.959" ry="1.959" />
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </div>
+
+  </div>
+    <footer style="text-align: center; padding: 2rem 1rem; font-size: 0.9rem; color: #888; border-top: 1px solid #ddd; background-color: #fff;">
+    &copy; 2025 1A1Z Capital. All rights reserved. | <a href="privacy.html" style="color: #888; text-decoration: none;">Privacy Policy</a><p></p>
+    <small>The information on this site is provided by 1A1Z Capital for informational purposes only and does not constitute financial or investment advice.</small>
+  </footer>
+</body>
+</html>

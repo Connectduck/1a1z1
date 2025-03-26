@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>1A1Z Capital - Home</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+      background-color: #FBFBFB;}
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(173,216,230, 0.15), transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(173,216,230, 0.15), transparent 40%);
+      background-repeat: no-repeat;
+      background-color: #FBFBFB;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 1rem;
+    }
+
+    .nav-brand {
+      font-size: 1.25rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #666;
+    }
+
+    .hero {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .hero svg {
+      max-width: 100%;
+      max-height: 100%;
+      height: auto;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #888;
+      border-top: 1px solid #ddd;
+      background-color: #fff;
+    }
+
+    footer a {
+      color: #888;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">1A1Z Capital</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="what.html">What We Do</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <svg width="800" height="800" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="300" cy="300" r="270" stroke="black" stroke-width="10" fill="none" />
+      <text x="300" y="300" fill="black" font-family="Arial, sans-serif" font-weight="bold" font-size="85" text-anchor="middle" dominant-baseline="middle">
+        1A1Z Capital
+      </text>
+    </svg>
+  </div>
+
+  <footer>
+    &copy; 2025 1A1Z Capital. All rights reserved. | <a href="privacy.html">Privacy Policy</a><p></p>
+<small>The information on this site is provided by 1A1Z Capital for informational purposes only and does not constitute financial or investment advice.</small>
+  </footer>
+</body>
+</html>
